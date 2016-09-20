@@ -21,8 +21,9 @@
     "react-responsive-grid": "^0.3.3",
     "react-typography": "^0.12.0",
     "toml-js": "0.0.8",
-    "typography": "^0.13.0",
-    "typography-plugin-code": "^0.13.0"
+    "typography": "^0.13.3",
+    "typography-plugin-code": "^0.13.0",
+    "typography-theme-lawton": "^0.13.0"
   },
   "devDependencies": {
     "gh-pages": "^0.11.0"
