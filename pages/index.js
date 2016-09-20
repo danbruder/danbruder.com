@@ -4,6 +4,7 @@ import { prefixLink } from 'gatsby-helpers'
 import DocumentTitle from 'react-document-title'
 import { config } from 'config'
 import dan from './dan.jpg'
+import '../css/styles.css'
 
 export default class Index extends React.Component {
   render () {

@@ -20,9 +20,6 @@ module.exports = React.createClass({
           wrapperStyle={{
             marginBottom: rhythm(1),
           }}
-          style={{
-            background: '#3498db',
-          }}
         >
           <Container
             style={{
@@ -49,7 +46,9 @@ module.exports = React.createClass({
             paddingTop: 0,
           }}
         >
+        <div className="content">
           {this.props.children}
+        </div>
         </Container>
       </div>
     )
