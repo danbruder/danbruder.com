@@ -8,7 +8,7 @@ tags: strength
 
 I'm not very good about exercising. Now that I am in full fledged adulthood, its high time I develop habbits for healthiness that will last me the rest of my life. This means:
 
-1. Eating health
+1. Eating healthy
 2. Exercizing
 3. Other stuff probably
 
