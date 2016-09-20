@@ -38,7 +38,7 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-links && surge ./public danbruder.com",
+    "deploy": "gatsby build --prefix-links && surge ./public danbruder.com && git add . && git commit -m 'words' && git push",
     "develop": "gatsby develop",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
