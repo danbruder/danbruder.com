@@ -5,30 +5,34 @@ import DocumentTitle from 'react-document-title'
 import { config } from 'config'
 import sortBy from 'lodash/sortBy'
 import access from 'safe-access'
+import moment from 'moment'
 
 export default class extends React.Component {
   render () {
     const pageLinks = []
     const sortedPages = sortBy(this.props.route.pages, (page) => access(page, 'data.date')).reverse()
     sortedPages.forEach((page) => {
-      if (access(page, 'file.ext') === 'md' && !include(page.path, '/404')) {
+      if (access(page, 'file.ext') === 'md' && page.path != "/404.html") {
         const title = access(page, 'data.title') || page.path
         pageLinks.push(
-          <li key={page.path} style={style.post}>
-            <Link style={style.Link} to={prefixLink(page.path)}>
+          <div key={page.path} >
+            <Link to={prefixLink(page.path)}>
               {title}
             </Link>
-            <div style={style.date}>
+            <div >
               {moment(page.data.date).calendar()}
             </div>
-            <Summary body={page.data.body} />
-          </li>
+            <div >
+              {page.data.summary}
+            </div>
+          </div>
         )
       }
     })
     return (
       <DocumentTitle title={config.siteTitle}>
         <div>
+          {pageLinks}
         </div>
       </DocumentTitle>
     )

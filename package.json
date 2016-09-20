@@ -15,6 +15,7 @@
     "markdown-it-deflist": "^2.0.1",
     "markdown-it-footnote": "^3.0.1",
     "markdown-it-sub": "^1.0.0",
+    "moment": "^2.15.0",
     "object-assign": "^4.1.0",
     "react-document-title": "^2.0.1",
     "react-headroom": "^2.1.2",
@@ -24,7 +25,8 @@
     "toml-js": "0.0.8",
     "typography": "^0.13.3",
     "typography-plugin-code": "^0.13.0",
-    "typography-theme-lawton": "^0.13.0"
+    "typography-theme-lawton": "^0.13.0",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "gh-pages": "^0.11.0"
