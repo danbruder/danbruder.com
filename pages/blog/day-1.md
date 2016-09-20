@@ -14,7 +14,7 @@ I'm not very good about exercising. Now that I am in full fledged adulthood, its
 
 I've already been fortunate enough to be forced into eating healthy largely due to the digestive issues I have encountered (that are now much improved thanks to [the GAPS diet](http://www.gapsdiet.com/)). So one down, two to go!
 
-1. ~~Eating health~~
+1. ~~Eating healthy~~
 2. Exercizing
 3. Other stuff probably
 
