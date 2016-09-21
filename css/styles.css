@@ -30,12 +30,13 @@ a, a:visited {
 
 .content{
   background: white;
-  padding: 40px;
+  padding: 40px 10px;
 } 
 
 @media (min-width: 972px){
   .content{
     margin: 40px 0px;
     border-radius: 10px;
+    padding: 40px;
   }
 }
