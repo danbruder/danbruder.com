@@ -6,6 +6,15 @@ import CodePlugin from 'typography-plugin-code'
 import lawtonTheme from 'typography-theme-lawton'
 
 lawtonTheme.baseFontSize = '18px'
+lawtonTheme.googleFonts = lawtonTheme.googleFonts.concat([
+  {
+    name: 'Alex Brush',
+    styles: [
+      '400',
+    ],
+  },
+])
+
 const typography = new Typography(lawtonTheme)
 
 // Hot reload typography in development.
