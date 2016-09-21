@@ -30,8 +30,9 @@ module.exports = React.createClass({
                 color: 'white',
                 textDecoration: 'none',
               }}
+              className="main-logo"
             >
-            <h3 >Dan Bruder</h3>
+            <h3>Dan Bruder</h3>
             </Link>
           </Container>
         </Headroom>

@@ -33,7 +33,16 @@ a, a:visited {
   padding: 40px 10px;
 } 
 
+.main-logo{
+  text-align:center;
+}
+
 @media (min-width: 972px){
+.main-logo{
+  text-align: left;
+}
+  .content-wrapper{
+  }
   .content{
     margin: 40px 0px;
     border-radius: 10px;
