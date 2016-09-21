@@ -1,7 +1,9 @@
 body{
   background-color: rgba(0,0,0,0.8);
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/background.jpg) ;
-  background-repeat: no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 body, html {
@@ -18,8 +20,22 @@ a, a:visited {
   padding: 10px;
 }
 
+.headroom h3{
+  color: white;
+  margin: 0px;
+}
+
+.content-wrapper{
+}
+
 .content{
   background: white;
   padding: 40px;
-  border-radius: 10px;
 } 
+
+@media (min-width: 972px){
+  .content{
+    margin: 40px 0px;
+    border-radius: 10px;
+  }
+}

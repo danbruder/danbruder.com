@@ -16,11 +16,7 @@ module.exports = React.createClass({
   render () {
     return (
       <div>
-        <Headroom
-          wrapperStyle={{
-            marginBottom: rhythm(1),
-          }}
-        >
+        <Headroom >
           <Container
             style={{
               maxWidth: 960,
@@ -35,16 +31,16 @@ module.exports = React.createClass({
                 textDecoration: 'none',
               }}
             >
-            Dan Bruder
+            <h3 >Dan Bruder</h3>
             </Link>
           </Container>
         </Headroom>
         <Container
           style={{
             maxWidth: 960,
-            padding: `${rhythm(1)} ${rhythm(3/4)}`,
             paddingTop: 0,
           }}
+          className="content-wrapper"
         >
         <div className="content">
           {this.props.children}

@@ -24,6 +24,4 @@ I recently came across another article that corroborated what I found on AoM - p
 
 I had been holding off because it is uncomfortable and new to go to the gym and do things when you don't _really_ know what you are doing. The book helped with that - but I still lacked the experience. Well, yesterday, I dove in and I'm glad I did. It wasn't anything like I was worried about!
 
-> More information here about my experience, and photos
-
 So here goes. See you in 6 months, hopefully much stronger then.

@@ -5,6 +5,7 @@ import { GoogleFont } from 'react-typography'
 import CodePlugin from 'typography-plugin-code'
 import lawtonTheme from 'typography-theme-lawton'
 
+lawtonTheme.baseFontSize = '18px'
 const typography = new Typography(lawtonTheme)
 
 // Hot reload typography in development.
