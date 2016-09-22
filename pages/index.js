@@ -4,10 +4,35 @@ import { prefixLink } from 'gatsby-helpers'
 import DocumentTitle from 'react-document-title'
 import { config } from 'config'
 import dan from '../images/dan.jpg'
+import sortBy from 'lodash/sortBy'
+import access from 'safe-access'
+import moment from 'moment'
 import '../css/styles.css'
 
 export default class Index extends React.Component {
   render () {
+    const pageLinks = []
+    const sortedPages = sortBy(this.props.route.pages, (page) => access(page, 'data.date')).reverse()
+    sortedPages.forEach((page) => {
+      if (access(page, 'file.ext') === 'md' && page.path != "/404.html") {
+        const title = access(page, 'data.title') || page.path
+        pageLinks.push(
+          <div className="blog-list-item" key={page.path} >
+            <h3>
+              <Link to={prefixLink(page.path)}>
+                {title}
+              </Link>
+            </h3>
+            <div >
+              {moment(page.data.date).calendar()}
+            </div>
+            <div >
+              {page.data.summary}
+            </div>
+          </div>
+        )
+      }
+    })
     return (
       <DocumentTitle title={config.siteTitle}>
         <div>
@@ -28,9 +53,10 @@ export default class Index extends React.Component {
               </div>
             </div>
             <div>
-              <h3>Here's some links:</h3>
+              <h3>Here's what I'm writing about:</h3>
+              {pageLinks}
+              <h3>You can also find me here:</h3>
               <ul>
-                <li><Link to="/blog/">Blog</Link></li>
                 <li><a href="https://twitter.com/danbruder">Twitter</a></li>
                 <li><a href="https://github.com/danbruder">Github</a></li>
                 <li><a href="https://rapiddg.com">Rapid Development Group</a></li>
