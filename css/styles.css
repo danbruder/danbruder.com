@@ -6,12 +6,33 @@ body{
   -o-background-size: cover;
   background-size: cover;
 }
+
 body, html {
   height:100%
 }
 
+h6{
+  text-transform: uppercase;
+  color: #aaa;
+  border-bottom: 1px dashed #aaa;
+}
+
 a, a:visited {
+  text-decoration: underline;
   color: #4183D7;
+}
+
+blockquote{
+  font-size: 30px;
+  line-height: 1.2;
+  font-style: italic;
+  padding: 20px 30px;
+  color: #aaa;
+  border-left: 3px solid #aaa;
+}
+
+blockquote p{
+  margin: 0px;
 }
 
 .hero{
@@ -44,14 +65,20 @@ a, a:visited {
 }
 
 @media (min-width: 972px){
-.main-logo{
-  text-align: left;
-}
-  .content-wrapper{
+  .main-logo{
+    text-align: left;
   }
   .content{
     margin: 40px 0px;
     border-radius: 10px;
     padding: 40px;
   }
+}
+
+.blog-list-item{
+  margin-bottom: 20px;
+}
+
+.blog-list-item h3{
+  margin: 0px;
 }

@@ -15,10 +15,12 @@ export default class extends React.Component {
       if (access(page, 'file.ext') === 'md' && page.path != "/404.html") {
         const title = access(page, 'data.title') || page.path
         pageLinks.push(
-          <div key={page.path} >
-            <Link to={prefixLink(page.path)}>
-              {title}
-            </Link>
+          <div className="blog-list-item" key={page.path} >
+            <h3>
+              <Link to={prefixLink(page.path)}>
+                {title}
+              </Link>
+            </h3>
             <div >
               {moment(page.data.date).calendar()}
             </div>
