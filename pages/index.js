@@ -12,26 +12,30 @@ import '../css/styles.css'
 export default class Index extends React.Component {
   render () {
     const pageLinks = []
-    const sortedPages = sortBy(this.props.route.pages, (page) => access(page, 'data.date')).reverse()
+    const sortedPages = sortBy(this.props.route.pages, (page) => access(page, 'data.date'))
+    .filter(page => {
+      return access(page, 'file.ext') === 'md' && page.path != "/404.html"
+    })
+    .reverse()
+    .slice(0, 5);
+
     sortedPages.forEach((page) => {
-      if (access(page, 'file.ext') === 'md' && page.path != "/404.html") {
-        const title = access(page, 'data.title') || page.path
-        pageLinks.push(
-          <div className="blog-list-item" key={page.path} >
-            <h3>
-              <Link to={prefixLink(page.path)}>
-                {title}
-              </Link>
-            </h3>
-            <div >
-              {moment(page.data.date).calendar()}
-            </div>
-            <div >
-              {page.data.summary}
-            </div>
+      const title = access(page, 'data.title') || page.path
+      pageLinks.push(
+        <div className="blog-list-item" key={page.path} >
+          <h3>
+            <Link to={prefixLink(page.path)}>
+              {title}
+            </Link>
+          </h3>
+          <div >
+            {moment(page.data.date).calendar()}
           </div>
-        )
-      }
+          <div >
+            {page.data.summary}
+          </div>
+        </div>
+      )
     })
     return (
       <DocumentTitle title={config.siteTitle}>

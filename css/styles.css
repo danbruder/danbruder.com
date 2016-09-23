@@ -23,12 +23,12 @@ a, a:visited {
 }
 
 blockquote{
-  font-size: 30px;
-  line-height: 1.2;
-  font-style: italic;
-  padding: 20px 30px;
   color: #aaa;
-  border-left: 3px solid #aaa;
+  margin: 15px -15px;
+  background: #eee;
+  color: #888;
+  padding: 15px;
+  font-style: italic;
 }
 
 blockquote p{
