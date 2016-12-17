@@ -3,7 +3,6 @@ import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import DocumentTitle from 'react-document-title'
 import { config } from 'config'
-import dan from '../images/dan.jpg'
 import sortBy from 'lodash/sortBy'
 import access from 'safe-access'
 import moment from 'moment'
@@ -44,17 +43,18 @@ export default class Index extends React.Component {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            width: "100%"
           }}>
-            <div style={{
-              marginRight: "20px"
-            }}>
-                <img style={{borderRadius: "50%", width: 100}} src={dan}/>
-              </div>
-              <div>
-                <h1>
-                  Hey. I'm Dan. 
-                </h1>
-              </div>
+          <div>
+            <img style={{
+              borderRadius: "50%",
+              width: 100,
+              display: "block",
+              margin: "0px auto 20px auto",
+              border: "2px solid black"
+            }} src="/dan.jpg"/>
+              <h1> Hey. I'm Dan.  </h1>
+            </div>
             </div>
             <div>
               <h3>Here's what I'm writing about:</h3>
