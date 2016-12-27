@@ -67,7 +67,6 @@ export default class Index extends React.Component {
               <ul>
                 <li><a href="https://twitter.com/danbruder">Twitter</a></li>
                 <li><a href="https://github.com/danbruder">Github</a></li>
-                <li><a href="https://rapiddg.com">Rapid Development Group</a></li>
               </ul>
             </div>
         </div>
