@@ -57,9 +57,13 @@ export default class Index extends React.Component {
             </div>
             </div>
             <div>
-              <h3>Here's what I'm writing about:</h3>
-              {pageLinks}
-              <h3>You can also find me here:</h3>
+              I'm a developer at <a href="https://rapiddg.com">Rapid Development Group</a>. But you already knew that, didn't you? I like to learn. I like to program. I like to play guitar. I have a wife and two kids. 
+              <br/>
+              <br/>
+              Tell me something about yourself. <a href="https://twitter.com/messages/compose?recipient_id=40870431">Go on, click here.</a>
+              <br/>
+              <br/>
+              <h3>You can also find me here:</h3> 
               <ul>
                 <li><a href="https://twitter.com/danbruder">Twitter</a></li>
                 <li><a href="https://github.com/danbruder">Github</a></li>
