@@ -31,9 +31,6 @@ export default class Index extends React.Component {
             </div>
             </div>
             <div>
-              <p>Words.</p>
-              <p>Words.</p>
-              <p>Words.</p>
             </div>
         </div>
       </DocumentTitle>
