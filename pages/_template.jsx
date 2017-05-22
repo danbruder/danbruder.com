@@ -16,26 +16,6 @@ module.exports = React.createClass({
   render () {
     return (
       <div>
-        <Headroom >
-          <Container
-            style={{
-              maxWidth: 960,
-              paddingTop: 0,
-              padding: `${rhythm(1)} ${rhythm(3/4)}`,
-            }}
-          >
-            <Link
-              to={prefixLink('/')}
-              style={{
-                color: 'white',
-                textDecoration: 'none',
-              }}
-              className="main-logo"
-            >
-            <h3>Dan Bruder</h3>
-            </Link>
-          </Container>
-        </Headroom>
         <Container
           style={{
             maxWidth: 960,
